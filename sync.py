@@ -3,7 +3,7 @@
 #A simple check before the program runs to allow the user to command the OS to connect to the internet and also 
 #check whether the program needs to run at all. As in my case this program will be scheduled for starting when the OS starts,
 #it makes sense to have this check.
-var = raw_input("Press Enter if you are ready to run Social Sync. Make sure the juice is flowing, uh, I mean that you are connected to the internet!")
+var = raw_input("Start Sync?")
 
 #Import the necessary libraries
 #Please download and install, along with the dependies, the python-twitter library - http://code.google.com/p/python-twitter/
@@ -135,3 +135,7 @@ for entry in mainEntries:
 	print 
 	
 print "Updated " + str(numUpdates) + " entries on Twitter and Facebook"
+
+print
+
+var = raw_input("Sync Finished")
